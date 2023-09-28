@@ -96,6 +96,7 @@ main {
 .result .card {
   text-align: center;
   max-height: 450px;
+  margin-bottom: 10px;
 
 }
 
@@ -158,9 +159,10 @@ main {
   padding: 40px;
   background-color: rgba(219, 65, 65, 0.35);
   top: 0;
-  bottom: 0;
+  bottom: 40px;
   transition: all .6s ease;
   transform: translateX(0);
+  overflow-y: auto;
 }
 
 .pop.show {
@@ -185,6 +187,13 @@ main {
   border-radius: 10px;
   border: 1px solid rgba(219, 65, 65, 0.35);
   overflow: hidden;
+}
+@media(max-width:768px){
+  .pop  .img{
+    width: 80%;
+    height: 200px;
+  
+  }
 }
 .pop  .img img{
   width: 100%;
